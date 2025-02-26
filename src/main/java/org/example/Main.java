@@ -147,20 +147,24 @@ public class Main {
 
                 case 5:
                     try {
-                            System.out.println("Porcentaje de votos por cada candidato" +
-                                    "\n1. Gustavo petro: " + (100 * votosCand1) / totalVotos + "%" +
-                                    "\n2. Juan Manuel Santos: " + (100 * votosCand2) / totalVotos + "%" +
-                                    "\n3. Barack Obama: " + (100 * votosCand3) / totalVotos + "%");
-                        }catch (ArithmeticException e){
-                            System.out.println("No hay votos registrados!");
-                        }
-                        break;
+                        System.out.println("Porcentaje de votos por cada candidato" +
+                                "\n1. Gustavo petro: " + (100 * votosCand1) / totalVotos + "%" +
+                                "\n2. Juan Manuel Santos: " + (100 * votosCand2) / totalVotos + "%" +
+                                "\n3. Barack Obama: " + (100 * votosCand3) / totalVotos + "%");
+                    }catch (ArithmeticException e){
+                        System.out.println("No hay votos registrados!");
+                    }
+                    break;
 
                 case 6:
-                    System.out.println("Costo promedio de cada campaña" +
-                            "\n1. Gustavo Petro: " + valorCampCand1/votosCand1 +
-                            "\n2. Juan Manuel Santos: " + valorCampCand2/votosCand2 +
-                            "\n3. Barack Obama: " + valorCampCand3/votosCand3);
+                    try {
+                        System.out.println("Costo promedio de cada campaña" +
+                                "\n1. Gustavo Petro: " + valorCampCand1 / votosCand1 +
+                                "\n2. Juan Manuel Santos: " + valorCampCand2 / votosCand2 +
+                                "\n3. Barack Obama: " + valorCampCand3 / votosCand3);
+                    }catch (ArithmeticException e){
+                        System.out.println("No hay votos registrados!");
+                    }
                     break;
 
                 case 7:
